@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Rectangle</title>
+<script language="javascript">
+    var w = prompt("Enter width of rectangle:");
+    var h = prompt("Enter height of rectangle:");
+
+    if (w == null || w == "" || isNaN(w) ||
+        h == null || h == "" || isNaN(h)) {
+
+        document.write("<font color='red'>Invalid input! Enter numbers only.</font>");
+    }
+    else {
+        w = parseFloat(w);
+        h = parseFloat(h);
+
+        var perimeter = 2 * (w + h);
+        var area = w * h;
+
+        document.write("<h3>Rectangle Result:</h3>");
+        document.write("Width = " + w + "<br>");
+        document.write("Height = " + h + "<br><br>");
+        document.write("Perimeter = " + perimeter + "<br>");
+        document.write("Area = " + area);
+    }
+</script>
+</head>
+<body>
+</body>
+</html>
